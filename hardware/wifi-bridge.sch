@@ -181,7 +181,7 @@ L MOS_P Q101
 U 1 1 55F16765
 P 9300 4850
 F 0 "Q101" H 9300 5040 60  0000 R CNN
-F 1 "MOS_P" H 9200 4750 60  0000 R CNN
+F 1 "NTR2101P" H 9200 4750 60  0000 R CNN
 F 2 "kicad-libraries:SOT23GDS" H 9300 4850 60  0001 C CNN
 F 3 "" H 9300 4850 60  0000 C CNN
 	1    9300 4850
@@ -297,7 +297,7 @@ L CP1 C102
 U 1 1 55F17A79
 P 2600 5250
 F 0 "C102" H 2650 5350 50  0000 L CNN
-F 1 "470µF" H 2650 5150 50  0000 L CNN
+F 1 "330µF" H 2650 5150 50  0000 L CNN
 F 2 "kicad-libraries:ELKO_63" H 2600 5250 60  0001 C CNN
 F 3 "" H 2600 5250 60  0000 C CNN
 	1    2600 5250
@@ -1199,4 +1199,12 @@ Wire Wire Line
 Wire Wire Line
 	9800 4700 10100 4700
 Connection ~ 9900 4700
+Text Notes 2750 5250 0    60   ~ 0
+UCD0J331MCL1GS
+Text Notes 3550 3800 0    60   ~ 0
+TODO Debug for SAM3S\nSerial Console
+Text Notes 2950 5000 0    60   ~ 0
+Too high. Change to Tantal?
+Text Notes 5850 3750 0    60   ~ 0
+Charge Termination may disable the device when powered by \nUSB and no battery is present.
 $EndSCHEMATC
