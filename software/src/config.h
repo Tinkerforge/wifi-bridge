@@ -134,6 +134,9 @@
 // TODO: Change name
 #define PIN_DETECT        {1 << 6, PIOB, ID_PIOB, PIO_OUTPUT_0, PIO_DEFAULT}
 
+// Pin charge status
+#define PIN_CH_ST        {1 << 8, PIOA, ID_PIOA, PIO_INPUT, PIO_PULLUP}
+
 
 
 // ************** INTERRUPT PRIORITIES ***********

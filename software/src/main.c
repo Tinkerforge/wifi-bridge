@@ -45,6 +45,7 @@
 #include "bricklib/logging/logging.h"
 
 #include "config.h"
+#include "bricklib/utility/util_definitions.h"
 
 void vApplicationStackOverflowHook(xTaskHandle *pxTask, signed char *pcTaskName) {
 	while(true);
@@ -52,11 +53,18 @@ void vApplicationStackOverflowHook(xTaskHandle *pxTask, signed char *pcTaskName)
 
 int main() {
 
-//	brick_init();
+	brick_init();
 	led_init();
+	Pin ch_st = PIN_CH_ST;
+	PIO_Configure(&ch_st, 1);
 	while(1) {	
-	
-		led_toggle(LED_STD_BLUE);
+		if(PIO_Get(&ch_st)) {
+			led_toggle(LED_STD_BLUE);
+		}
+		else {
+			led_on(LED_STD_BLUE);
+		}
+		SLEEP_MS(100);
 		wdt_restart();
 	}
 }
