@@ -1076,7 +1076,7 @@ Connection ~ 10500 1000
 Text Notes 8800 750  0    60   ~ 0
 LQM21PN1R0MC0
 Text Notes 9400 2450 0    60   ~ 0
-z.B. MLP2012S4R7MT0S1
+e.g. MLP2012S4R7MT0S1
 $Comp
 L C C219
 U 1 1 55F1282C
@@ -1156,8 +1156,8 @@ Wire Wire Line
 Connection ~ 9550 5300
 Wire Wire Line
 	9250 1100 9300 1100
-Text Notes 6950 1500 0    60   ~ 0
-S2B-PH-SM4-TB
+Text Notes 6500 1950 0    60   ~ 0
+S2B-PH-SM4-TB\n\nJST XH, PH? Choose dependend on battery\nmaybe smaller connector possible?
 $Comp
 L MOSFET_P Q201
 U 1 1 5608F5FA
