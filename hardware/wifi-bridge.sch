@@ -297,8 +297,8 @@ L CP1 C102
 U 1 1 55F17A79
 P 2600 5250
 F 0 "C102" H 2650 5350 50  0000 L CNN
-F 1 "330µF" H 2650 5150 50  0000 L CNN
-F 2 "kicad-libraries:ELKO_63" H 2600 5250 60  0001 C CNN
+F 1 "TBD" H 2650 5150 50  0000 L CNN
+F 2 "kicad-libraries:7343" H 2600 5250 60  0001 C CNN
 F 3 "" H 2600 5250 60  0000 C CNN
 	1    2600 5250
 	1    0    0    -1  
@@ -1033,12 +1033,9 @@ Wire Wire Line
 	5950 2000 7450 2000
 Connection ~ 7450 2200
 Wire Wire Line
-	7250 2800 7250 2300
-Wire Wire Line
 	6650 2300 5950 2300
 Wire Wire Line
 	5950 2600 6650 2600
-Connection ~ 7250 2600
 Connection ~ 5450 7200
 Connection ~ 5450 7100
 Wire Wire Line
@@ -1207,4 +1204,23 @@ Text Notes 2950 5000 0    60   ~ 0
 Too high. Change to Tantal?
 Text Notes 5850 3750 0    60   ~ 0
 Charge Termination may disable the device when powered by \nUSB and no battery is present.
+Text Notes 100  1950 0    60   ~ 0
+Do not connect!?
+Wire Wire Line
+	7250 2600 7250 2800
+$Comp
+L 3V3 #PWR?
+U 1 1 5608EAA9
+P 7300 2200
+F 0 "#PWR?" H 7300 2300 40  0001 C CNN
+F 1 "3V3" H 7300 2325 40  0000 C CNN
+F 2 "" H 7300 2200 60  0000 C CNN
+F 3 "" H 7300 2200 60  0000 C CNN
+	1    7300 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 2300 7300 2300
+Wire Wire Line
+	7300 2300 7300 2200
 $EndSCHEMATC

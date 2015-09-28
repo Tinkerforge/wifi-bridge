@@ -52,7 +52,7 @@ void vApplicationStackOverflowHook(xTaskHandle *pxTask, signed char *pcTaskName)
 
 int main() {
 
-	brick_init();
+//	brick_init();
 	led_init();
 	while(1) {	
 	
