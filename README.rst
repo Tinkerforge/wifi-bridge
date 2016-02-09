@@ -1,6 +1,8 @@
 WIFI Bridge
 ===========
 
+**This product is currently Work In Progress.**
+
 This repository contains the hardware design files.
 
 Repository Content
